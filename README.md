@@ -6,7 +6,7 @@
 
 ## 🚀 Overview
 
-In a fragmented digital world of cooking apps, food delivery platforms, and recipe blogs, **FoodFusion** offers an **all-in-one ecosystem** for food enthusiasts and culinary professionals. Whether you're sharing recipes, discovering new cuisines, hiring chefs, or learning to cook – everything lives here.
+In a fragmented digital world of cooking apps, food delivery platforms, and recipe blogs, **Yummio** offers an **all-in-one ecosystem** for food enthusiasts and culinary professionals. Whether you're sharing recipes, discovering new cuisines, hiring chefs, or learning to cook – everything lives here.
 
 ---
 
@@ -67,14 +67,14 @@ There's no **single platform** to connect them all — until now.
 ### ✅ Prerequisites
 
 - Node.js (v18 or higher recommended)
-- Firebase CLI (`npm install -g firebase-tools`)
+
 
 ### 📦 Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/Yummio.git
-cd yummio
+git clone https://github.com/Mir-Danish/Yummio.git
+cd Yummio
 
 # 2. Install dependencies
 npm install
@@ -82,6 +82,6 @@ npm install
 # 3. Start the development server
 npm run dev
 
-
-
-
+# 4. Install Dependencies
+npm install react-router-dom
+npm install lucide-react
