@@ -1,4 +1,4 @@
-# 🍽️ FoodFusion – Where Passion Meets the Plate
+# 🍽️ Yummio – Where Passion Meets the Plate
 
 > A unified digital platform that blends social interaction, culinary learning, and professional growth for food lovers, home cooks, and chefs.
 
@@ -73,8 +73,8 @@ There's no **single platform** to connect them all — until now.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/foodfusion.git
-cd foodfusion
+git clone https://github.com/your-username/Yummio.git
+cd yummio
 
 # 2. Install dependencies
 npm install
