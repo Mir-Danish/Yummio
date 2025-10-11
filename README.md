@@ -82,4 +82,15 @@ npm install
 # 3. Start the development server
 npm run dev
 
+# Build for production
+npm run build
+
+# Preview the built app
+npm run preview
+
+# Firebase deploy (after login)
+firebase login
+firebase init
+firebase deploy
+
 
