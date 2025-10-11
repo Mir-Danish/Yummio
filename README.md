@@ -81,7 +81,3 @@ npm install
 
 # 3. Start the development server
 npm run dev
-
-# 4. Install Dependencies
-npm install react-router-dom
-npm install lucide-react
