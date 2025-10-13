@@ -70,7 +70,7 @@ const CreatePage = () => {
     setLoading(true);
 
     try {
-      // Use default placeholder image
+      // Use default placeholder image here
       const defaultImageUrl = `https://picsum.photos/800/600?random=${Date.now()}`;
 
       // Prepare recipe data
@@ -89,7 +89,7 @@ const CreatePage = () => {
         comments: 0,
       };
 
-      // Save to Firestore
+      // Save to Firestore in db
       const docRef = await addDoc(collection(db, "recipes"), recipeData);
       
       alert("Recipe created successfully! 🎉");
