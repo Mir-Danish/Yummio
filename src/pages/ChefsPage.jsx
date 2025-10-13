@@ -19,7 +19,7 @@ const ChefsPage = () => {
         if (cancelled) return;
         console.log("Chefs fetched:", data);
         
-        // Transform users into chefs with additional chef-specific data
+        // Transform users into chefs with additional chef-specific data for to be seen
         const transformedChefs = (data?.users || []).map(user => ({
           id: user.id,
           name: `${user.firstName} ${user.lastName}`,

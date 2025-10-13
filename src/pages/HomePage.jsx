@@ -80,41 +80,40 @@ const HomePage = () => {
 
   if (loading)
     return (
-      <div className="pb-20 md:pb-0 md:pl-60 bg-gradient-to-br from-orange-50 via-white to-red-50 min-h-screen">
+      <div className="pb-20 md:pb-0 md:pl-60 bg-gray-50 min-h-screen">
         {/* Logo Header for Mobile */}
-        <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-orange-200 md:hidden">
+        <div className="sticky top-0 z-10 bg-white border-b border-gray-200 md:hidden">
           <div className="flex items-center gap-2 p-3">
             <ChefHat className="w-6 h-6 text-orange-500" />
             <span className="font-bold text-lg">Yummio</span>
           </div>
         </div>
         
-        <div className="p-4 sm:p-6 max-w-7xl mx-auto">
-          {/* Hero Skeleton */}
-          <div className="mb-6 sm:mb-8 animate-pulse">
-            <div className="h-8 sm:h-10 w-64 bg-gray-200 rounded mb-2" />
-            <div className="h-4 w-96 bg-gray-200 rounded" />
-          </div>
-
-          {/* Grid Skeleton */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <article key={i} className="bg-white rounded-2xl overflow-hidden shadow-md">
-                <div className="h-48 sm:h-56 bg-gray-200 animate-pulse" />
-                <div className="p-4 space-y-3 animate-pulse">
+        <div className="max-w-2xl mx-auto">
+          {/* Feed Skeleton */}
+          <div className="space-y-4 py-4">
+            {Array.from({ length: 3 }).map((_, i) => (
+              <article key={i} className="bg-white border border-gray-200">
+                {/* Header */}
+                <div className="flex items-center gap-3 p-4 animate-pulse">
+                  <div className="w-10 h-10 bg-gray-200 rounded-full" />
+                  <div className="flex-1 space-y-2">
+                    <div className="h-3 w-32 bg-gray-200 rounded" />
+                    <div className="h-2 w-24 bg-gray-200 rounded" />
+                  </div>
+                </div>
+                {/* Image */}
+                <div className="h-96 bg-gray-200 animate-pulse" />
+                {/* Actions */}
+                <div className="p-4 space-y-3">
                   <div className="flex gap-4">
-                    <div className="h-3 w-16 bg-gray-200 rounded" />
-                    <div className="h-3 w-20 bg-gray-200 rounded" />
+                    <div className="h-6 w-6 bg-gray-200 rounded" />
+                    <div className="h-6 w-6 bg-gray-200 rounded" />
+                    <div className="h-6 w-6 bg-gray-200 rounded" />
                   </div>
                   <div className="space-y-2">
-                    <div className="h-3 w-24 bg-gray-200 rounded" />
                     <div className="h-3 w-full bg-gray-200 rounded" />
                     <div className="h-3 w-3/4 bg-gray-200 rounded" />
-                  </div>
-                  <div className="flex justify-around pt-3">
-                    <div className="h-8 w-16 bg-gray-200 rounded-lg" />
-                    <div className="h-8 w-16 bg-gray-200 rounded-lg" />
-                    <div className="h-8 w-16 bg-gray-200 rounded-lg" />
                   </div>
                 </div>
               </article>
@@ -125,16 +124,16 @@ const HomePage = () => {
     );
     
   if (error) return (
-    <div className="pb-20 md:pb-0 md:pl-60 bg-gradient-to-br from-orange-50 via-white to-red-50 min-h-screen">
+    <div className="pb-20 md:pb-0 md:pl-60 bg-gray-50 min-h-screen">
       {/* Logo Header for Mobile */}
-      <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-orange-200 md:hidden">
+      <div className="sticky top-0 z-10 bg-white border-b border-gray-200 md:hidden">
         <div className="flex items-center gap-2 p-3">
           <ChefHat className="w-6 h-6 text-orange-500" />
           <span className="font-bold text-lg">Yummio</span>
         </div>
       </div>
-      <div className="p-4 sm:p-6 max-w-7xl mx-auto">
-        <div className="text-center text-red-600 bg-red-50 rounded-2xl p-8 mt-8">
+      <div className="max-w-2xl mx-auto p-4">
+        <div className="text-center text-red-600 bg-red-50 rounded-lg p-8 mt-8">
           <p className="text-lg font-semibold">Error: {error}</p>
         </div>
       </div>
@@ -152,7 +151,7 @@ const HomePage = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="p-4 sm:p-6 max-w-7xl mx-auto">
+      <div className="p-4 sm:p-6 max-w-2xl mx-auto">
         <div className="mb-6 sm:mb-8 hidden md:block">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-2">
             Discover Delicious Recipes
@@ -166,16 +165,16 @@ const HomePage = () => {
           <div className="text-center text-gray-500 py-12">No recipes found.</div>
         )}
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        {/* Vertical Post Feed */}
+        <div className="space-y-4">
           {recipes.map((recipe) => (
             <article 
               key={recipe.id} 
-              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-280"
             >
               {/* Image with Overlay */}
               <div 
-                className="relative h-48 sm:h-56 overflow-hidden cursor-pointer"
+                className="relative h-80 sm:h-96 overflow-hidden cursor-pointer"
                 onClick={() => navigate(`/recipes/${recipe.id}`)}
               >
                 <img
@@ -201,7 +200,7 @@ const HomePage = () => {
                 </div>
 
                 {/* Recipe Name on Image */}
-                <h3 className="absolute bottom-3 left-3 right-3 text-white font-bold text-lg sm:text-xl line-clamp-2">
+                <h3 className="absolute bottom-3 left-3 right-3 text-white font-bold text-xl sm:text-2xl line-clamp-2">
                   {recipe.name}
                 </h3>
               </div>

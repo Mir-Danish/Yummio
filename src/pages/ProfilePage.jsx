@@ -16,7 +16,7 @@ const ProfilePage = () => {
     name: "Sarah Johnson",
     username: "@sarahjohnson",
     bio: "🍳 Passionate food Lover & Food Blogger | Healthy Recipe Creator | 📍 New York | Cooking is my love language",
-    profileImage: "https://i.pravatar.cc/300?img=45",
+    profileImage: "https://cdn.pixabay.com/photo/2012/04/26/19/43/profile-42914_1280.png",
     postsCount: 127,
     followers: 2543,
     following: 892

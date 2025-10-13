@@ -21,7 +21,7 @@ const CreatePage = () => {
   });
 
   useEffect(() => {
-    // Simulate initial page load
+    // Simulate initial page load 
     const timer = setTimeout(() => {
       setPageLoading(false);
     }, 500);
@@ -53,7 +53,7 @@ const CreatePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Validation
+    // Validation for forms
     if (!formData.name.trim()) {
       alert("Please enter a recipe name");
       return;
