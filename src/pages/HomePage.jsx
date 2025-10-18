@@ -90,7 +90,7 @@ const HomePage = () => {
         </div>
         
         <div className="max-w-2xl mx-auto">
-          {/* Feed Skeleton */}
+          {/* Feed Skeleton for loading */}
           <div className="space-y-4 py-4">
             {Array.from({ length: 3 }).map((_, i) => (
               <article key={i} className="bg-white border border-gray-200">

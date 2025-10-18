@@ -127,14 +127,14 @@ const CreatePage = () => {
             <div className="h-4 w-64 bg-gray-200 rounded"></div>
           </div>
 
-          {/* Form Skeleton */}
+          {/* Form Skeleton for loading */}
           <div className="space-y-4 sm:space-y-6">
             {/* Image Note Skeleton */}
             <div className="bg-gray-100 rounded-lg sm:rounded-xl p-3 sm:p-4 animate-pulse">
               <div className="h-4 w-3/4 bg-gray-200 rounded"></div>
             </div>
 
-            {/* Basic Info Skeleton */}
+            {/* Basic Info Skeleton for loading*/}
             <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-sm border border-gray-200 space-y-4 animate-pulse">
               <div className="h-6 w-40 bg-gray-200 rounded"></div>
               <div className="space-y-3">
@@ -151,21 +151,21 @@ const CreatePage = () => {
               </div>
             </div>
 
-            {/* Ingredients Skeleton */}
+            {/* Ingredients Skeleton for loading */}
             <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-sm border border-gray-200 space-y-3 animate-pulse">
               <div className="h-6 w-32 bg-gray-200 rounded"></div>
               <div className="h-10 w-full bg-gray-200 rounded"></div>
               <div className="h-10 w-full bg-gray-200 rounded"></div>
             </div>
 
-            {/* Instructions Skeleton */}
+            {/* Instructions Skeleton for loading*/}
             <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-sm border border-gray-200 space-y-3 animate-pulse">
               <div className="h-6 w-32 bg-gray-200 rounded"></div>
               <div className="h-20 w-full bg-gray-200 rounded"></div>
               <div className="h-20 w-full bg-gray-200 rounded"></div>
             </div>
 
-            {/* Buttons Skeleton */}
+            {/* Buttons Skeleton for loading */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-pulse">
               <div className="h-12 flex-1 bg-gray-200 rounded-lg"></div>
               <div className="h-12 flex-1 bg-gray-200 rounded-lg"></div>
